@@ -83,7 +83,7 @@ export default defineComponent({
             const { file, name } = options.file;
             // 上传图片
             const base64 = await getBase64(file);
-            var targetExtensionId = "olfihoaamfnkhaapkjpjhaaphobflohm"; // 插件的ID
+            var targetExtensionId = "pbkddelnhmoolfngnligdopenpknlddk"; // 插件的ID
             chrome.runtime.sendMessage(targetExtensionId, {
                 type: 'UploadToWeibo', data: {
                     base64,
@@ -111,7 +111,7 @@ export default defineComponent({
             previewImageUrl,
             showModal,
             previewFileList,
-            uploadImage,
+            // uploadImage,
             devUploadImage,
             handlePreview
         }
